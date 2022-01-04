@@ -15,7 +15,7 @@ function find3rdMaxNum(arr){
     return Math.max(...newArray);
 }
 
-find3rdMaxNum(arrayX);
+console.log(find3rdMaxNum(arrayX));
 // ------------------------------------------------------- //
 
 // ------------------ first method ----------------------- //
