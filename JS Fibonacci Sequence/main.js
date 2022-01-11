@@ -11,7 +11,7 @@ function FibonacciSeq(n){
     } else{
       let num1 = 1;
       let num2 = 1;
-      let next = 2;
+      let next = 0;
       for(let i=3; i<=n; i++){
         next = num1 + num2;
         num1=num2;
