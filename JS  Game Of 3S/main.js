@@ -13,7 +13,7 @@ function gamesOf3S(num){
             console.log(n, '-1');
             n = n -1;
         } else if ( x == 2){
-        console.log(n, '1');
+        console.log(n, '+1');
         n = n +1;
         }
         else if ( x == 0){
