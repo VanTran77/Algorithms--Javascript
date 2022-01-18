@@ -25,3 +25,36 @@ function gamesOf3S(num){
 }
 
 gamesOf3S(100);
+
+// --------------------------------------------------------- /
+
+function gameOfThree(num) {
+    //creat a variable and put user input in it 
+    let number = num;
+    //creat a variable for store number Modulus 3 | we only have three out put for it 
+    // 0 , 1 , 2
+    let numberModulus = number % 3;
+    //creat a loop and when we reach to 1 we are going outside of loop 
+    while (number != 1) {
+        //when numberModulus is equal 0
+        if (numberModulus === 0) {
+            console.log(number, '0');
+            number = number / 3;
+            numberModulus = number % 3;
+        //when numberModulus is equal  1
+        } else if (numberModulus === 1) {
+            console.log(number, '-1')
+            number = (number - 1) / 3;
+            numberModulus = number % 3;
+        //when numberModulus is equal 2
+        } else if (numberModulus === 2) {
+            console.log(number, '+1');
+            number = (number + 1) / 3;
+            numberModulus = number % 3;
+
+        }
+    }
+    console.log(numberModulus);
+}
+
+gameOfThree(100);
